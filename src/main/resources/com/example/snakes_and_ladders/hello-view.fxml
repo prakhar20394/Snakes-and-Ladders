@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#tap_ani" prefHeight="732.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snakes_and_ladders.HelloController">
+   <children>
+      <ImageView fx:id="background" fitHeight="800.0" fitWidth="511.0" layoutX="-8.0" layoutY="-6.0" onMouseClicked="#giveCoords" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../WhatsApp%20Image%202021-12-21%20at%2013.08.49.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dice_1" fitHeight="80.0" fitWidth="200.0" layoutX="166.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dice_2" fitHeight="80.0" fitWidth="200.0" layoutX="166.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dice_3" fitHeight="80.0" fitWidth="200.0" layoutX="166.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dice_4" fitHeight="80.0" fitWidth="200.0" layoutX="166.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dice_5" fitHeight="80.0" fitWidth="200.0" layoutX="166.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dice_6" fitHeight="80.0" fitWidth="200.0" layoutX="166.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dice_animation" fitHeight="80.0" fitWidth="200.0" layoutX="166.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../ezgif.com-gif-maker.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="board" fitHeight="400.0" fitWidth="400.0" layoutX="6.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../board.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="dice_click" layoutX="179.0" layoutY="609.0" minWidth="53.0" mnemonicParsing="false" onAction="#ask2move" opacity="0.0" prefHeight="54.0" prefWidth="53.0" text="Button" />
+      <Label fx:id="coords" layoutX="179.0" layoutY="87.0" opacity="0.0" text="Label" textFill="WHITE" />
+      <ImageView fx:id="p1_layout" fitHeight="65.0" fitWidth="129.0" layoutX="39.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../bottom_player1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="p2_layout" fitHeight="65.0" fitWidth="129.0" layoutX="246.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../bottom_player2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="back_img" fitHeight="54.0" fitWidth="32.0" layoutX="23.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../back%20.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="12.0" layoutY="96.0" minHeight="10.0" minWidth="53.0" mnemonicParsing="false" onAction="#showBackScreen" opacity="0.0" prefHeight="29.0" prefWidth="53.0" />
+      <ImageView fx:id="blue_player" fitHeight="37.0" fitWidth="23.0" layoutX="3.0" layoutY="547.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Blue_player.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="green_player" fitHeight="37.0" fitWidth="23.0" layoutX="14.0" layoutY="547.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Green_player.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="115.0" layoutY="626.0" text="Player 1" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="246.0" layoutY="626.0" text="Player 2" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="player1_black" arcHeight="5.0" arcWidth="5.0" height="65.0" layoutX="39.0" layoutY="605.0" opacity="0.56" stroke="BLACK" strokeType="INSIDE" width="129.0" />
+      <ImageView fitHeight="73.0" fitWidth="102.0" layoutX="170.0" layoutY="525.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../arrow.gif" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="player2_black" arcHeight="5.0" arcWidth="5.0" height="65.0" layoutX="246.0" layoutY="605.0" opacity="0.56" stroke="BLACK" strokeType="INSIDE" width="129.0" />
+      <ImageView fitHeight="233.0" fitWidth="281.0" layoutX="65.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="winner_screen" prefHeight="732.0" prefWidth="412.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="768.0" opacity="0.51" stroke="BLACK" strokeType="INSIDE" width="439.0" />
+            <ImageView fitHeight="1000.0" fitWidth="600.0" layoutX="-19.0" layoutY="-213.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../winner.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="winner_label" layoutX="94.0" layoutY="386.0" prefHeight="29.0" prefWidth="80.0" text="Player 1" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font></Label>
+            <Label fx:id="loser_label" layoutX="245.0" layoutY="386.0" text="Player 2" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font></Label>
+            <ImageView fitHeight="306.0" fitWidth="424.0" layoutX="3.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../confetti.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="306.0" fitWidth="424.0" layoutX="2.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../confetti.gif" />
+               </image>
+            </ImageView>
+            <Button fx:id="replay_button" layoutX="230.0" layoutY="465.0" mnemonicParsing="false" onAction="#replay_game" opacity="0.0" prefHeight="42.0" prefWidth="109.0" text="Button" />
+            <Button fx:id="winner_menu_button" layoutX="72.0" layoutY="471.0" mnemonicParsing="false" onAction="#back_to_menu_from_winner" opacity="0.0" prefHeight="35.0" prefWidth="109.0" text="Button" />
+         </children>
+      </Pane>
+      <Pane fx:id="back_pane" prefHeight="732.0" prefWidth="412.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="768.0" opacity="0.51" stroke="BLACK" strokeType="INSIDE" width="439.0" />
+            <ImageView fitHeight="400.0" fitWidth="412.0" layoutX="6.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../backScreen.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="back_to_game" layoutX="72.0" layoutY="395.0" mnemonicParsing="false" onAction="#hide_backmenu" opacity="0.0" prefHeight="65.0" prefWidth="80.0" text="Button" />
+            <Button fx:id="back_to_menu" layoutX="170.0" layoutY="401.0" mnemonicParsing="false" onAction="#show_menu" opacity="0.0" prefHeight="54.0" prefWidth="164.0" text="Button" />
+         </children>
+      </Pane>
+      <Pane fx:id="menu" prefHeight="732.0" prefWidth="412.0">
+         <children>
+            <ImageView fx:id="background1" fitHeight="800.0" fitWidth="511.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../WhatsApp%20Image%202021-12-21%20at%2013.08.49.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="menu_ss" fitHeight="937.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../menu.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="start_button" layoutX="50.0" layoutY="232.0" mnemonicParsing="false" onAction="#hidee" opacity="0.0" prefHeight="371.0" prefWidth="313.0" />
+         </children>
+      </Pane>
+      <ImageView fx:id="tap" fitHeight="150.0" fitWidth="73.0" layoutX="286.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../tap.gif" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
